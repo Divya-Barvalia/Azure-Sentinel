@@ -1,4 +1,4 @@
-<h1 align="center">🌐 </h1>
+<h1 align="center">🌐 Monitoring and Investigating Endpoints with Azure Sentinel</h1>
 
 <p align="center">
   A full-stack investigation of malicious login attempts in an Azure-hosted Windows VM, leveraging Microsoft Sentinel, KQL, and watchlists for Geopgraphical-IP threat mapping.
