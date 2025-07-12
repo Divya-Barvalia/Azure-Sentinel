@@ -18,64 +18,59 @@
 
 <ol>
   <li>
-    ✅ <strong>Set up an Azure account</strong><br/>
-    <img src="screenshots/step1.png" alt="Azure account setup" width="600"/>
-  </li>
-  <li>
-    🗂️ <strong>Created a resource group</strong><br/>
-    <img src="screenshots/step2.png" alt="Resource group creation" width="600"/>
+    🗂️ <strong>Created a resource group within Microsoft Azure</strong><br/>
+    <img src="Screenshots/Resource-Group.png" width="800"/>
   </li>
   <li>
     🌐 <strong>Deployed a virtual network (VNet) within the resource group</strong><br/>
-    <img src="screenshots/step3.png" alt="Virtual network setup" width="600"/>
+    <img src="Screenshots/Group-VNET.png" width="800"/>
   </li>
   <li>
     💻 <strong>Created a Windows 10 pro VM for and linked to the resource group and VNet</strong><br/>
-    <img src="screenshots/step4.png" alt="VM deployment" width="600"/>
+    <img src="Screenshots/Win10Client.png" width="600"/>
   </li>
   <li>
     🔐 <strong>Connected to the VM via Remote Desktop Protocol (RDP)</strong><br/>
-    <img src="screenshots/step5.png" alt="RDP session" width="600"/>
   </li>
   <li>
     📶 <strong>Verified connectivity by pinging the VM’s public IP from local PC</strong><br/>
-    <img src="screenshots/step6.png" alt="Ping verification" width="600"/>
+    <img src="Screenshots/TestVM-Running.png"  width="400"/>
   </li>
   <li>
     📋 <strong>Viewed failed login attempts using Windows Event Viewer</strong><br/>
     Filtered for <code>Event ID 4625</code> to isolate failed logon attempts.<br/>
-    <img src="screenshots/step7.png" alt="Event viewer logs" width="600"/>
+    <img src="Screenshots/BadLogin-OnVM.png"  width="600"/>
   </li>
   <li>
     📊 <strong>Created a Log Analytics Workspace and linked it to Microsoft Sentinel</strong><br/>
-    <img src="screenshots/step8.png" alt="Sentinel workspace creation" width="600"/>
+    <img src="Screenshots/SentinelWorkspace.png"  width="600"/>
   </li>
   <li>
     📦 <strong>Downloaded Windows Security Events via the Microsoft Sentinel Content Hub</strong><br/>
-    <img src="screenshots/step9.png" alt="Security events content pack" width="600"/>
+    <img src="Screenshots/Sentinel-ContentHub.png" width="500"/>
   </li>
   <li>
     🛠️ <strong>Created a Data Collection Rule (DCR) using the Azure Monitoring Agent</strong><br/>
-    <img src="screenshots/step10.png" alt="DCR setup" width="600"/>
+    <img src="Screenshots/CollectionRule.png"  width="600"/>
   </li>
   <li>
     🧪 <strong>Queried logs with Kusto Query Language (KQL)</strong><br/>
     Used KQL to search for failed logon attempts and analyze trends.<br/>
-    <img src="screenshots/step11.png" alt="KQL security event query" width="600"/>
+    <img src="Screenshots/BadLogin-SentinelLogged.png" width="700"/><img src="Screenshots/Search2.png" width="700"/><img src="Screenshots/Search3.png" width="350"/><img src="Screenshots/Search4-Events.png" width="700"/>
   </li>
   <li>
-    🌍 <strong>Created a threat intelligence watchlist with known attacker IPs and geolocations</strong><br/>
-    <img src="screenshots/step12.png" alt="Watchlist creation" width="600"/>
+    🌍 <strong>Created a threat intelligence watchlist with known attacker IPs and geolocations that mapped over 50,000 IP ranges.</strong><br/>
+    <img src="Screenshots/SentinelWatchlist.png"  width="600"/>
   </li>
   <li>
     📡 <strong>Executed a KQL query to match login attempts with known malicious IPs from the watchlist</strong><br/>
     This helped identify attacker locations.<br/>
-    <img src="screenshots/step13.png" alt="KQL + Watchlist for attacker mapping" width="600"/>
+    <img src="Screenshots/Watchlist-Search.png"  width="600"/>
   </li>
   <li>
     🗺️ <strong>Built a workbook in Sentinel to visualize attacker locations</strong><br/>
-    Used the advanced editor and <code>geo_ip</code> enrichment to map over 50,000 IP ranges.<br/>
-    <img src="screenshots/step14.png" alt="Sentinel map workbook" width="600"/>
+    Used the advanced editor and <code>geo_ip</code> enrichment.<br/>
+    <img src="Screenshots/AttackMap.png"  width="350"/>
   </li>
 </ol>
 
